@@ -22,10 +22,8 @@ main() {
     }
     return sum;
   }
-
     int entry = 4000000;
     if (kDebugMode) {
       print("The sum of the even fibonacci numbers whose values do not exceed four million is ${sumOfEvenFibonacci(entry)}");
     }
-
 }
