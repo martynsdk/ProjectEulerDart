@@ -1,6 +1,8 @@
 
 import 'dart:math';
 
+import 'package:flutter/foundation.dart';
+
 ///*
 ///The sum of the squares of the first ten natural numbers is,
 /// The square of the sum of the first ten natural numbers is,
@@ -21,9 +23,13 @@ main(){
   var squareOfTheSum = pow(sum, 2);
   var difference = squareOfTheSum - sumOfTheSquares;
 
-print("The sum of the squares of the first one hundred natural numbers is $sumOfTheSquares");
-print("The square of the sum of the first one hundred natural numbers is $squareOfTheSum");
-print("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is $difference");
-
+if (kDebugMode) {
+  print(
+      "The sum of the squares of the first one hundred natural numbers is $sumOfTheSquares");
+  print(
+      "The square of the sum of the first one hundred natural numbers is $squareOfTheSum");
+  print(
+      "The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is $difference");
+}
 }
 
