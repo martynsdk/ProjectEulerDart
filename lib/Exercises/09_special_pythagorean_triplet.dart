@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 ///*
@@ -11,38 +10,17 @@ import 'dart:math';
 /// Find the product abc.
 /// Results will be generated on the Console
 
-main(){
-
+main() {
   const perimeter = 1000;
-  for(var a = 0; a < perimeter; a++){
-    for (var b = a+1; b < perimeter; b++){
+  for (var a = 0; a < perimeter; a++) {
+    for (var b = a + 1; b < perimeter; b++) {
       var c = perimeter - a - b;
-      if(pow(a, 2) + pow(b, 2) == pow(c, 2) && a != 0){
+      if (pow(a, 2) + pow(b, 2) == pow(c, 2) && a != 0) {
         print("a + b + c = 1000 || '$a' + '$b' + '$c' = 1000.");
-        print("The product of a * b * c is '${a*b*c}'.");
-        print("And the sum of a^2 + b^2 = '${pow(a, 2) + pow(b, 2)}', which is the same as c^2 = '${pow(c, 2)}'");
+        print("The product of a * b * c is '${a * b * c}'.");
+        print(
+            "And the sum of a^2 + b^2 = '${pow(a, 2) + pow(b, 2)}', which is the same as c^2 = '${pow(c, 2)}'");
       }
     }
   }
-
-
-
-
 }
-
-
-/***
- * def compute():
-    PERIMETER = 1000
-    for a in range(1, PERIMETER + 1):
-    for b in range(a + 1, PERIMETER + 1):
-    c = PERIMETER - a - b
-    if a * a + b * b == c * c:
-    # It is now implied that b < c, because we have a > 0
-    return str(a * b * c)
-
-
-    if __name__ == "__main__":
-    print(compute())
-
- */
