@@ -1,6 +1,6 @@
 # project_euler_dart
 
-A new Flutter project. I'm here.
+A new Flutter project. I'm here..
 
 ## Getting Started
 
