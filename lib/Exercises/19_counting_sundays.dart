@@ -14,7 +14,7 @@
 
 main() {
   List<int> daysPerMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-  int sunCount = 0, month, year, dayOfWeek = 1;
+  int sundaysCounter = 0, month, year, dayOfWeek = 1;
 
   bool leapYear(int yr) {
     return (yr / 4) % 1 == 0 && ((yr / 100) % 1 != 0 || (yr / 400) % 1 == 0);
@@ -39,10 +39,10 @@ main() {
       if (dayOfWeek > 7) {
         dayOfWeek = (0 + dayOfWeek % 7);
       } else if (dayOfWeek == 7) {
-        sunCount++;
+        sundaysCounter++;
       }
     }
   }
   print(
-      "$sunCount Sundays felt on the first of the month during the twentieth century.");
+      "$sundaysCounter Sundays felt on the first of the month during the twentieth century.");
 }
